@@ -9,7 +9,7 @@ const basicConfig = {
 		name: '博客',
 		avatar: 'https://www.example.site/api/avatar.png',
 		email: 'hi@example.cyou',
-		homepage: 'https://www.example.site/',
+		homepage: 'https://suzmiya.github.io/',
 	},
 	copyright: {
 		abbr: 'CC BY-NC-SA 4.0',
@@ -20,7 +20,7 @@ const basicConfig = {
 	language: 'zh-CN',
 	timeEstablished: '2019-07-19',
 	timeZone: 'Asia/Shanghai',
-	url: 'https://blog.example.site/',
+	url: 'https://suzmiya.github.io/',
 	defaultCategory: '未分类',
 }
 
