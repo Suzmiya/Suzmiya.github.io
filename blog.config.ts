@@ -1,26 +1,26 @@
 import type { FeedEntry } from './app/types/feed'
 
 const basicConfig = {
-	title: '博客',
-	subtitle: '博客',
+	title: "Shio's Blog",
+	subtitle: "Shio's Blog",
 	// 长 description 利好于 SEO
-	description: '博客',
+	description: "Shio's Blog — 记录技术与生活",
 	author: {
-		name: '博客',
-		avatar: 'https://www.example.site/api/avatar.png',
-		email: 'hi@example.cyou',
-		homepage: 'https://suzmiya.github.io/',
+		name: 'Shio',
+		avatar: 'https://github.com/Suzmiya.png',
+		email: '',
+		homepage: 'https://shio.ink/',
 	},
 	copyright: {
 		abbr: 'CC BY-NC-SA 4.0',
 		name: '署名-非商业性使用-相同方式共享 4.0 国际',
 		url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
 	},
-	favicon: 'https://www.example.site/api/icon.png',
+	favicon: 'https://github.com/Suzmiya.png',
 	language: 'zh-CN',
-	timeEstablished: '2019-07-19',
+	timeEstablished: '2026-06-13',
 	timeZone: 'Asia/Shanghai',
-	url: 'https://suzmiya.github.io/',
+	url: 'https://shio.ink/',
 	defaultCategory: '未分类',
 }
 
@@ -73,25 +73,22 @@ const blogConfig = {
 
 	/** 向 <head> 中添加脚本 */
 	scripts: [
-		// 自己部署的 Umami 统计服务
-		{ 'src': 'https://zhi.example.site/zhi.js', 'data-website-id': 'a1997c81-a42b-46f6-8d1d-8fbd67a8ef41', 'defer': true },
-		// 自己网站的 Cloudflare Insights 统计服务
-		{ 'src': 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "97a4fe32ed8240ac8284e9bffaf03962"}', 'defer': true },
-		// Twikoo 评论系统
-		{ src: 'https://lib.baomitu.com/twikoo/1.6.44/twikoo.min.js', defer: true },
+		// 统计服务请自行配置并取消注释
+		// { 'src': 'https://zhi.example.site/zhi.js', 'data-website-id': 'xxx', 'defer': true },
+		// { 'src': 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "xxx"}', 'defer': true },
 	],
 
-	/** 自己部署的 Twikoo 服务 */
+	/** 评论服务请自行配置 */
 	twikoo: {
-		envId: 'https://twikoo.example.site/',
-		preload: 'https://twikoo.example.site/',
+		envId: '',
+		preload: '',
 	},
 }
 
 /** 用于生成 OPML 和友链页面配置 */
 export const myFeed: FeedEntry = {
 	author: blogConfig.author.name,
-	sitenick: '摸鱼处',
+	sitenick: 'Shio',
 	title: blogConfig.title,
 	desc: blogConfig.subtitle || blogConfig.description,
 	link: blogConfig.url,
@@ -100,7 +97,7 @@ export const myFeed: FeedEntry = {
 	avatar: blogConfig.author.avatar,
 	archs: ['Nuxt', 'Vercel'],
 	date: blogConfig.timeEstablished,
-	comment: '这是我自己',
+	comment: 'Shio 的个人博客',
 }
 
 export default blogConfig
